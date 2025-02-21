@@ -1,0 +1,46 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f8f0ff; /* Soft Purple Background */
+    color: #5e1f8b; /* Deep Purple Text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #7b2cbf, #9d4edd); /* Gradient Purple */
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* Heading Style */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Behance Button */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #d291bc; /* Light Purple */
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Hover Effect */
+.btn:hover {
+    background: #ff6bcb; /* Bright Pink-Purple */
+    transform: scale(1.05);
+}
