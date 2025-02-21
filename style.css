@@ -1,6 +1,6 @@
 /* General Page Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     background-color: #f8f0ff; /* Soft Purple Background */
     color: #5e1f8b; /* Deep Purple Text */
@@ -25,7 +25,37 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* Behance Button - Fixed */
+/* Portfolio Section */
+.portfolio {
+    margin-top: 40px;
+}
+
+/* Floating Badge */
+.floating-badge {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #ff6bcb; /* Bright Pink-Purple */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    animation: float 3s infinite ease-in-out;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Behance Portfolio Button */
 .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -37,53 +67,11 @@ h1 {
     border-radius: 8px;
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
 }
 
 /* Button Hover Effect */
 .btn:hover {
     background: #ff6bcb; /* Bright Pink-Purple */
     transform: scale(1.05);
-}
-/* Animated Section */
-.animated-section {
-    animation: fadeIn 2s ease-in-out;
-    padding: 20px;
-    border-radius: 15px;
-    margin: 20px auto;
-    width: 80%;
-}
-
-/* Fade In Effect */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Floating UX/UI Badge */
-.floating-badge {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: #7b2cbf;
-    color: white;
-    padding: 10px 15px;
-    font-weight: bold;
-    border-radius: 50px;
-    animation: floatUp 3s infinite alternate ease-in-out;
-}
-
-/* Floating Animation */
-@keyframes floatUp {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(-10px);
-    }
 }
