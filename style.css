@@ -25,7 +25,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* Behance Button */
+/* Behance Button - Fixed */
 .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -43,4 +43,47 @@ h1 {
 .btn:hover {
     background: #ff6bcb; /* Bright Pink-Purple */
     transform: scale(1.05);
+}
+/* Animated Section */
+.animated-section {
+    animation: fadeIn 2s ease-in-out;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* Fade In Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Floating UX/UI Badge */
+.floating-badge {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #7b2cbf;
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 50px;
+    animation: floatUp 3s infinite alternate ease-in-out;
+}
+
+/* Floating Animation */
+@keyframes floatUp {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
 }
